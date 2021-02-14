@@ -39,6 +39,6 @@ test("gets manager's role", () => {
 test("gets manager's OFFICE NUMBER", () => {
     const manager = new Manager('Eric Normann', 1, 'eric.n@me.com', 1);
 
-    expect(manager.getOfficeNumber()).toEqual(expect.any(Number));
+    expect(manager.getOfficeNumber()).toEqual(expect.stringContaining('1'));
 });
 
