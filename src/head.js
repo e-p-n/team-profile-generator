@@ -13,12 +13,12 @@ const head = `
 
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-danger mb-4" style="justify-content:center;">
-            <h1 class="navbar-text h1 text-center">My Team</h1>
+        <nav class="navbar bg-dark mb-4" style="justify-content:center;">
+            <h1 class="navbar-text h1 text-center text-white">My Team</h1>
         </nav>
     </header>
    
-    <main class="container-fluid">
+    <main class="container">
         <div class="row">
 
 `

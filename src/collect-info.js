@@ -276,4 +276,3 @@ function collectIntern(){
 }
 
 module.exports = collectManager;
-
