@@ -9,10 +9,6 @@ let manager;
 let engineer;
 let intern;
 
-// function generatePage(team) {
-//     console.log(team);
-// }
-
 function collectManager(){
 
     console.log(`

@@ -1,4 +1,4 @@
-//const { expect } = require('@jest/globals');
+const { expect } = require('@jest/globals');
 const Manager = require('../lib/Manager');
 
 test('creates an manager object', () => {
@@ -20,4 +20,3 @@ test("gets manager's office number", () => {
 
     expect(manager.getOfficeNumber()).toEqual(expect.stringContaining('1'));
 });
-

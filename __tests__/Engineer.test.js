@@ -20,5 +20,3 @@ test("gets engineer's role", () => {
 
     expect(engineer.getRole()).toEqual(expect.stringContaining('Engineer'));
 });
-
-

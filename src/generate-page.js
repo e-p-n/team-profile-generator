@@ -3,6 +3,8 @@ const fs = require('fs');
 
 
 function generatePage(team) {
+    team.sort((a,b) => (a.sortBy > b.sortBy) ? 1 : ((b.sortBy > a.sortBy) ? -1 : 0));
+
     let cards = "";
     let name = "";
     let role = "";
@@ -52,7 +54,7 @@ function generatePage(team) {
             cards += `
             
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
 
             `;
         }
@@ -69,7 +71,9 @@ ${cards}
     `
 fs.writeFile('./dist/index.html', output, function (err) {
     if (err) return console.log(err);
-    console.log('* * * * Your "index.html" file was saved in the "dist" folder. * * * *');
+    console.log(`
+* * * * Your "index.html" file was saved in the "dist" folder. * * * *
+    `);
   });
 }
 module.exports = generatePage;
