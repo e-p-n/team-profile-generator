@@ -1,6 +1,4 @@
-const Info = require('./lib/Info');
+const collectInfo = require('./src/collect-info');
 
-const info = new Info();
 
-const team = info.collectManager();
-console.log(team);
+collectInfo();
