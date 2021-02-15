@@ -24,6 +24,7 @@ We will start with the team manager:
 
     `)
 
+    // Generate inquirer prompts to collect Manager info
     inquirer
         .prompt([
             
@@ -87,18 +88,20 @@ We will start with the team manager:
             
         ])
         .then(data => {
+            // Create new instance of Manager class and add it to the team array
             manager = new Manager(data.name, data.id, data.email, data.officeNumber);
             team.push(manager);
 
             console.log(`
 * * * * * * * * * * Enter Employee Information  * * * * * * * * * *
             `);
-            
+
             collectEmployee();
         }); 
 }
 function collectEmployee(){
 
+    // Generate inquirer prompt to pick Engineer or Intern
     inquirer
         .prompt([
             {
@@ -118,6 +121,8 @@ function collectEmployee(){
         
 }
 function collectEngineer(){
+
+    // Generate inquirer prompts to collect engineer information
     inquirer 
         .prompt([
             {
@@ -184,6 +189,7 @@ function collectEngineer(){
             }
         ])
         .then (data => {
+            // create a new instance of the Engineer class with info collected and add it to the team array
             engineer = new Engineer(data.name, data.id, data.email, data.github);
             team.push(engineer);
             if (data.addMore === true) {
@@ -195,6 +201,8 @@ function collectEngineer(){
 }
 
 function collectIntern(){
+        
+    // Generate inquirer prompts to collect intern information
     inquirer 
         .prompt([
             {
@@ -261,6 +269,8 @@ function collectIntern(){
             }
         ])
         .then (data => {
+            
+            // create a new instance of the Intern class with info collected and add it to the team array
             intern = new Intern(data.name, data.id, data.email, data.school)
             team.push(intern);
             if (data.addMore === true) {
