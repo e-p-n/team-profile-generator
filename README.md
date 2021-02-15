@@ -10,7 +10,7 @@ Application for creating a team HTML page based on Inquirer inputs.
 ## Usage
 1. In your terminal/bash window type "node index" or "node index.js" to launch the app.
 2. Answer the question prompts in the terminal/bash window. 
-3. Navigate to the "dist" folder inside the apps main folder. Inside you will find a completed indec&#46;html file. The file layout is created with Bootstrap, so there is no need to worry about needing a supporting CSS file.
+3. Navigate to the "dist" folder inside the app’s main folder. Inside you will find a completed index&#46;html file. The file layout is created with Bootstrap, so there is no need to worry about needing a supporting CSS file.
 
 [![](./assets/screenshot.png)](https://drive.google.com/file/d/16G9-Te4LfdgL0QOnN1xxYRtLLrqnA9Zu/view)
 [Click here](https://drive.google.com/file/d/16G9-Te4LfdgL0QOnN1xxYRtLLrqnA9Zu/view) to watch a step-by-step video.
